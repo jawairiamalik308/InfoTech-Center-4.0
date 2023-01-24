@@ -14,7 +14,29 @@ info tech center 4.0 OS is loading
 import time
 sleep = 2
 print("\n\nWelcome - InfoTech Center 4.0\n")
-time.sleep(sleep)
-print("InfoTech Center 4.0 OS is loading...")
+
+import time
+import sys
+
+done = 'false'
+#here is the animation
+def animate():
+    while done == 'false':
+        sys.stdout.write('\Infotech center 4.0 is loading *')
+        time.sleep(0.1)
+        sys.stdout.write('\rInfotech center 4.0 is loading **')
+        time.sleep(0.1)
+        sys.stdout.write('\rInfotech center 4.0 is loading ***')
+        time.sleep(0.1)
+        sys.stdout.write('\rInfotech center 4.0 is loading ** ')
+        time.sleep(0.1)
+        sys.stdout.write('\rInfortech center 4.0 is loading *')
+    sys.stdout.write('\rDone!     ')
+
+animate()
+#long process here
+done = 'false'
+
+
 
 
