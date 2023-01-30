@@ -32,7 +32,7 @@ def animate():
         sys.stdout.write('\rInfotech center 4.0 is loading *')
     sys.stdout.write('\rDone!     ')
 
-
+animate()
 #long process here
 done = 'false'
 
