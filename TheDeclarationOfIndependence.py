@@ -9,7 +9,6 @@ info tech center 4.0 OS is loading
 """
 
 
-"""
 # Import Libraies Here
 import time
 sleep = 2
@@ -33,11 +32,9 @@ def animate():
         sys.stdout.write('\rInfotech center 4.0 is loading *')
     sys.stdout.write('\rDone!     ')
 
-animate()
+
 #long process here
 done = 'false'
-"""
-
 
 
 
