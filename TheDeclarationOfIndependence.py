@@ -18,19 +18,17 @@ Create a Function to determine our gas level and closest gas station
 
 
 # Import Libraries here
-
-
 import random
-
+from time import sleep
 # Gas level Function
 
 def gas_level_gauge():
-    gas_level_list = ["Empty","Low","Quarter","Half","Three Quarter","Full"]
+    gas_level_list = ["Empty","Low","Quarter tank","Half tank","Three Quarter tank","Full"]
     current_gas_level = random.choice (gas_level_list)
-    print("Your gas level is",current_gas_level,".")
     return current_gas_level
 
-gas_level_gauge()
+#Variable calling gas level gauge function to store its value
+gas_level_indicator = gas_level_gauge()
 
 
 #List of gas stations function
@@ -38,10 +36,19 @@ gas_level_gauge()
 def list_of_gas_stations(): 
     gas_stations = ["Shell","Speedway","Costco","Sams Club","Circle K","Meijer","Marathon"]
     gas_station_nearby = random.choice (gas_stations)
-    print("Your nearest gas station is",gas_station_nearby,".")
     return gas_station_nearby
 
-list_of_gas_stations()
+
+
+# Determine gas level and closest gas station
+
+def gas_level_alert():
+    miles_to_gas_station_low = round(random.uniform(1, 25), 2)
+    miles_to_gas_station_quarter = round(random.uniform(26, 50), 2)
+    if gas_level_indicator == "Empty":
+        print("***WARNING, GAS IS EMPTY***")
+        sleep(1)
+        print("Calling Emergency Contact...")
 
 
 
