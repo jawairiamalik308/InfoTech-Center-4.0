@@ -22,7 +22,6 @@ Create a Function to determine our gas level and closest gas station
 
 import random
 
-
 # Gas level Function
 
 def gas_level_gauge():
