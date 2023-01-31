@@ -27,11 +27,13 @@ import random
 def gas_level_gauge():
     gas_level_list = ["Empty","Low","Quarter","Half","Three Quarter","Full"]
     current_gas_level = random.choice (gas_level_list)
+    print("Your gas level is",current_gas_level,".")
     return current_gas_level
 
-print(gas_level_gauge())
+gas_level_gauge()
 
 
+#List of gas stations function
 
 def list_of_gas_stations(): 
     gas_stations = ["Shell","Speedway","Costco","Sams Club","Circle K","Meijer","Marathon"]
@@ -39,6 +41,7 @@ def list_of_gas_stations():
     print("Your nearest gas station is",gas_station_nearby,".")
     return gas_station_nearby
 
+list_of_gas_stations()
 
 
 
