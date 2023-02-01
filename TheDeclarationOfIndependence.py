@@ -49,7 +49,14 @@ def gas_level_alert():
         print("***WARNING, GAS IS EMPTY***")
         sleep(1)
         print("Calling Emergency Contact...")
+    elif gas_level_indicator == "Low":
+        print("***WARNING, GAS IS LOW***")
+        sleep(1)
+        print("Checking Google Maps for nearest gas station...")
+        sleep(2)
+        print("Nearest gas station is",list_of_gas_stations(),",",miles_to_gas_station_low,"miles away")
 
+gas_level_alert()
 
 
 
