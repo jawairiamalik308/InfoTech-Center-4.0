@@ -1,3 +1,55 @@
+#Merged Welcome and Gasoline branches  - stable
+#Programer: Jawairia Malik
+#Date merged: 2.6.2023
+
+"""
+Our welcome screen will start our program letting  drivers know that the
+info tech center 4.0 OS is loading
+"""
+
+
+# Import Libraies Here
+import random
+from time import sleep
+import time
+
+
+import time
+import sys
+
+done = 'false'
+# Import any Libraries Here
+import time  # I imported the time library for further use in code.
+import sys  # I imported the system library for further use in code.
+
+print('\n\033[1;34;48m Welcome to Infotech Center 4.0')
+
+x = 0
+a = 0
+
+time.sleep(2)
+print('')
+
+while x != 20:
+    x += 1
+    b = ("\033[1;33;40m Loading" + "." * a)
+    a = a + 1
+    sys.stdout.write('\r'+b) # \r prints a carriage return first, so `b` is printed on top of the previous line.
+    time.sleep(0.5)
+    if a == 4:
+        a = 0
+    if x == 20:
+        print('\033[1;32;40m Done!')
+
+
+
+
+
+
+
+
+
+
 # Programmer : JoJo Malik
 # Date : 1.30.2023
 # Program : InfoTechCenter Gasoline
@@ -18,8 +70,7 @@ Create a Function to determine our gas level and closest gas station
 
 
 # Import Libraries here
-import random
-from time import sleep
+
 # Gas level Function
 
 def gas_level_gauge():
@@ -46,21 +97,21 @@ def gas_level_alert():
     miles_to_gas_station_low = round(random.uniform(1, 25), 2)
     miles_to_gas_station_quarter = round(random.uniform(26, 50), 2)
     if gas_level_indicator == "Empty":
-        print("***WARNING, GAS IS EMPTY***")
+        print("\n***WARNING, GAS IS EMPTY***")
         sleep(1)
         print("Calling Emergency Contact...")
     elif gas_level_indicator == "Low":
-        print("***WARNING, GAS IS LOW***")
+        print("\n***WARNING, GAS IS LOW***")
         sleep(1)
-        print("Searching for nearest gas station...")
+        print("\nSearching for nearest gas station...")
         sleep(2)
-        print("Nearest gas station is",list_of_gas_stations(),",",miles_to_gas_station_low,"miles away")
+        print("\nNearest gas station is",list_of_gas_stations(),",",miles_to_gas_station_low,"miles away")
     elif gas_level_indicator == "Quarter tank":
-        print("You have quarter tank")
+        print("\nYou have quarter tank")
         sleep(1)
-        print("Searching for nearest gas station...")
+        print("\nSearching for nearest gas station...")
         sleep(2)
-        print("Nearest gas station is",list_of_gas_stations(),",",miles_to_gas_station_quarter,"miles away" )
+        print("\nNearest gas station is",list_of_gas_stations(),",",miles_to_gas_station_quarter,"miles away" )
     elif gas_level_indicator == "Half tank":
         print("Half tank, good level of gas.")
     elif gas_level_indicator == "Three Quarter tank":
@@ -70,42 +121,6 @@ def gas_level_alert():
 
 gas_level_alert()
 
-
-
-
-
-"""
-Our welcome screen will start our program letting  drivers know that the
-info tech center 4.0 OS is loading
-"""
-
-
-# Import Libraies Here
-import time
-sleep = 2
-print("\n\nWelcome - InfoTech Center 4.0\n")
-
-import time
-import sys
-
-done = 'false'
-#here is the animation
-def animate():
-    while done == 'false':
-        sys.stdout.write('\Infotech center 4.0 is loading *')
-        time.sleep(0.1)
-        sys.stdout.write('\rInfotech center 4.0 is loading **')
-        time.sleep(0.1)
-        sys.stdout.write('\rInfotech center 4.0 is loading ***')
-        time.sleep(0.1)
-        sys.stdout.write('\rInfotech center 4.0 is loading ** ')
-        time.sleep(0.1)
-        sys.stdout.write('\rInfotech center 4.0 is loading *')
-    sys.stdout.write('\rDone!     ')
-
-animate()
-#long process here
-done = 'false'
 
 
 
