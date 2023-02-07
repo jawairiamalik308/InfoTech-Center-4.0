@@ -113,11 +113,11 @@ def gas_level_alert():
         sleep(2)
         print("\nNearest gas station is",list_of_gas_stations(),",",miles_to_gas_station_quarter,"miles away" )
     elif gas_level_indicator == "Half tank":
-        print("Half tank, good level of gas.")
+        print("\nHalf tank, good level of gas.")
     elif gas_level_indicator == "Three Quarter tank":
-        print("Your gas levels are good. You have three quarters of a tank.")
+        print("\nYour gas levels are good. You have three quarters of a tank.")
     else:
-        print("Your gas is full.")
+        print("\nYour gas is full.")
 
 gas_level_alert()
 
