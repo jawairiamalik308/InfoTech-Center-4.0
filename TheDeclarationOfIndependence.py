@@ -84,15 +84,13 @@ gas_level_indicator = gas_level_gauge()
 
 #List of gas stations function
 
-<<<<<<< HEAD
+
 def list_of_gas_stations(): 
     gas_stations = ["Shell","Speedway","Costco","Sams Club","Circle K","Meijer","Marathon"]
     gas_station_nearby = random.choice (gas_stations)
     return gas_station_nearby
 
 
-=======
->>>>>>> parent of dc5946e... Merge remote-tracking branch 'cloud/Gasoline' into Gasoline
 
 # Determine gas level and closest gas station
 
