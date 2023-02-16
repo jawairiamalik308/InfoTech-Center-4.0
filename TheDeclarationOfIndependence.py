@@ -32,7 +32,7 @@ print('')
 
 while x != 20:
     x += 1
-    b = ("\033[1;33;40m Loading" + "." * a)
+    b = ("\033[1;33;40m Loading" + ">" * a)
     a = a + 1
     sys.stdout.write('\r'+b) # \r prints a carriage return first, so `b` is printed on top of the previous line.
     time.sleep(0.5)
@@ -187,6 +187,5 @@ def v_r_s():
 
 # Call Functions Here
 v_r_s()
-weatherTemp()
 gas_level_alert()
 
