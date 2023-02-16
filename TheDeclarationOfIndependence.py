@@ -150,19 +150,19 @@ def weatherTemp():
     tempHot = round(random.uniform(50, 100))
     tempCold = round(random.uniform(10, 40))
     if weather == "Heavy Snow":
-        print("It is",tempCold,"degrees outside")
+        print("\nIt is",tempCold,"degrees outside")
     elif weather == "Blizzard":
-        print("It is",tempCold,"degrees outside")
+        print("\nIt is",tempCold,"degrees outside")
     elif weather == "Raining":
-        print("It is",tempCold,"degrees outside")
+        print("\nIt is",tempCold,"degrees outside")
     elif weather == "Sunny":
-        print("It is",tempHot,"degrees outside")
+        print("\nIt is",tempHot,"degrees outside")
     elif weather == "Partly Cloudy":
-        print("It is",tempHot,"degrees outside")
+        print("\nIt is",tempHot,"degrees outside")
     elif weather == "Sleet":
-        print("It is",tempCold,"degrees outside")
+        print("\nIt is",tempCold,"degrees outside")
     else:
-        print("It is",tempHot,"degrees outside")
+        print("\nIt is",tempHot,"degrees outside")
 
 
 
@@ -172,24 +172,24 @@ def weatherTemp():
 def v_r_s(): 
   if weatherAlert == "Heavy Snow":
     print("\nNWS has changed your alarm by 15 minutes due to", weatherAlert)
-    print("Your VRS has been engaged only allowing your vehicle to go 45 MPH")
+    print("\nYour VRS has been engaged only allowing your vehicle to go 45 MPH")
   elif weatherAlert == "Blizzard":
     print("\nNWS has changed your alarm by 45 minutes due to", weatherAlert)
-    print("VRS has been engaged only allowing your car to go 20 MPH")
+    print("\nVRS has been engaged only allowing your car to go 20 MPH")
   elif weatherAlert == "Raining":
     print("\nIt is", weatherAlert)
-    print("Bring an umbrella today")
+    print("\nBring an umbrella today")
   elif weatherAlert == "Sunny":
     print("\nIt is", weatherAlert)
-    print("Air quality is good today.")
+    print("\nAir quality is good today.")
   elif weatherAlert == "Partly Cloudy":
     print("\nIt is", weatherAlert)
   elif weatherAlert == "Sleet":
     print("\nNWS has changed your alarm by 30 minutes due to", weatherAlert)
-    print("VRS has been engaged only allowing your car to go 20 MPH")
+    print("\nVRS has been engaged only allowing your car to go 20 MPH")
   else:
     print("\nNWS has changed your alarm by one hour due to", weatherAlert)
-    print("Take shelter")
+    print("\nTake shelter")
 
 
 
@@ -206,5 +206,6 @@ def v_r_s():
 
 # Call Functions Here
 v_r_s()
-gas_level_alert()
 weatherTemp()
+gas_level_alert()
+
