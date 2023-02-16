@@ -171,14 +171,6 @@ def v_r_s():
   else:
     print("\nNWS has changed your alarm by one hour due to", weatherAlert)
     print("\nTake shelter")
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-=======
-
->>>>>>> DevTesting
-=======
->>>>>>> DevTesting
 
 
 # temp
