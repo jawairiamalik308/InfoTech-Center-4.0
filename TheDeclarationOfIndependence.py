@@ -131,6 +131,9 @@ def gas_level_alert():
 # Create weather conditions in a list and choose it randomly
 
 def weather():
+
+
+
   weatherForecast =   ["Heavy Snow", "Blizzard", "Raining", "Sunny", "Partly Cloudy", "Sleet", "Tornado"]
   weatherCondition = random.choice(weatherForecast) 
   return weatherCondition 
@@ -141,6 +144,13 @@ weatherAlert = weather()
 
 
 
+# temp
+
+def weatherTemp():
+    tempHot = round(random.uniform(50, 100),2)
+    tempCold = round(random.uniform(10, 40),2)
+    if temp == "Heavy Snow":
+        print("It is",tempCold,"outside")
 
 #VRS() to respond to the weather conditions
 
