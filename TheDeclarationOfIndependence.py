@@ -147,10 +147,25 @@ weatherAlert = weather()
 # temp
 
 def weatherTemp():
-    tempHot = round(random.uniform(50, 100),2)
-    tempCold = round(random.uniform(10, 40),2)
-    if temp == "Heavy Snow":
-        print("It is",tempCold,"outside")
+    tempHot = round(random.uniform(50, 100))
+    tempCold = round(random.uniform(10, 40))
+    if weather == "Heavy Snow":
+        print("It is",tempCold,"degrees outside")
+    elif weather == "Blizzard":
+        print("It is",tempCold,"degrees outside")
+    elif weather == "Raining":
+        print("It is",tempCold,"degrees outside")
+    elif weather == "Sunny":
+        print("It is",tempHot,"degrees outside")
+    elif weather == "Partly Cloudy":
+        print("It is",tempHot,"degrees outside")
+    elif weather == "Sleet":
+        print("It is",tempCold,"degrees outside")
+    else:
+        print("It is",tempHot,"degrees outside")
+
+
+
 
 #VRS() to respond to the weather conditions
 
@@ -192,3 +207,4 @@ def v_r_s():
 # Call Functions Here
 v_r_s()
 gas_level_alert()
+weatherTemp()
