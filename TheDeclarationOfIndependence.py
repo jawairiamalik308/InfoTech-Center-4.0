@@ -43,10 +43,30 @@ def v_r_s():
     print("\nNWS has changed your alarm by one hour due to", weatherAlert)
     print("Take shelter")
 
+
 v_r_s()
 
+# temp
 
+def weatherTemp():
+    tempHot = round(random.uniform(50, 100))
+    tempCold = round(random.uniform(10, 40))
+    if weather == "Heavy Snow":
+        print("\nIt is",tempCold,"degrees outside")
+    elif weather == "Blizzard":
+        print("\nIt is",tempCold,"degrees outside")
+    elif weather == "Raining":
+        print("\nIt is",tempCold,"degrees outside")
+    elif weather == "Sunny":
+        print("\nIt is",tempHot,"degrees outside")
+    elif weather == "Partly Cloudy":
+        print("\nIt is",tempHot,"degrees outside")
+    elif weather == "Sleet":
+        print("\nIt is",tempCold,"degrees outside")
+    else:
+        print("\nIt is",tempHot,"degrees outside")
 
+weatherTemp()
 
 
 
