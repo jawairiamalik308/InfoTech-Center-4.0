@@ -153,23 +153,29 @@ weatherAlert = weather()
 def v_r_s(): 
   if weatherAlert == "Heavy Snow":
     print("\nNWS has changed your alarm by 15 minutes due to", weatherAlert)
+    sleep(1)
     print("\nYour VRS has been engaged only allowing your vehicle to go 45 MPH")
   elif weatherAlert == "Blizzard":
     print("\nNWS has changed your alarm by 45 minutes due to", weatherAlert)
+    sleep(1)
     print("\nVRS has been engaged only allowing your car to go 20 MPH")
   elif weatherAlert == "Raining":
     print("\nIt is", weatherAlert)
+    sleep(2)
     print("\nBring an umbrella today")
   elif weatherAlert == "Sunny":
     print("\nIt is", weatherAlert)
+    sleep(1)
     print("\nAir quality is good today.")
   elif weatherAlert == "Partly Cloudy":
     print("\nIt is", weatherAlert)
   elif weatherAlert == "Sleet":
     print("\nNWS has changed your alarm by 30 minutes due to", weatherAlert)
+    sleep(1)
     print("\nVRS has been engaged only allowing your car to go 20 MPH")
   else:
     print("\nNWS has changed your alarm by one hour due to", weatherAlert)
+    sleep(1)
     print("\nTake shelter")
 
 
@@ -180,18 +186,25 @@ def weatherTemp():
     tempHot = round(random.uniform(50, 100))
     tempCold = round(random.uniform(10, 40))
     if weather == "Heavy Snow":
+        sleep(1)
         print("\nIt is",tempCold,"degrees outside")
     elif weather == "Blizzard":
+        sleep(1)
         print("\nIt is",tempCold,"degrees outside")
     elif weather == "Raining":
+        sleep(1)
         print("\nIt is",tempCold,"degrees outside")
     elif weather == "Sunny":
+        sleep(1)
         print("\nIt is",tempHot,"degrees outside")
     elif weather == "Partly Cloudy":
+        sleep(1)
         print("\nIt is",tempHot,"degrees outside")
     elif weather == "Sleet":
+        sleep(1)
         print("\nIt is",tempCold,"degrees outside")
     else:
+        sleep(1)
         print("\nIt is",tempHot,"degrees outside")
 
 weatherTemp()
