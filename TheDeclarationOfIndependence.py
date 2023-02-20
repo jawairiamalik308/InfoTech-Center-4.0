@@ -21,7 +21,6 @@ import time
 #Gas level Function
 
 def gas_level_gauge():
-
     gas_level_list = ["Empty","Low","Quarter tank","Half tank","Three Quarter tank","Full"]
     current_gas_level = random.choice (gas_level_list)
     return current_gas_level
@@ -179,3 +178,4 @@ weatherTemp()
 v_r_s()
 
 weatherTemp()
+gas_level_alert()
