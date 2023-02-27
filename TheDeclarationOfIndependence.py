@@ -71,23 +71,27 @@ def weatherTemp():
     tempCold = round(random.uniform(10, 40))
     if weather == "Heavy Snow":
         print("\nIt is",tempCold,"degrees outside")
-        print("Your heat has turned ON")
+
     elif weather == "Blizzard":
         print("\nIt is",tempCold,"degrees outside")
-        print("Your heat has turned ON")
+
     elif weather == "Raining":
         print("\nIt is",tempCold,"degrees outside")
     elif weather == "Sunny":
-        print("\nIt is",tempHot,"degrees outside")
-        print("Your AC is turned ON")
+        print("\nIt is",tempHot,"degrees outside. "
+                                "A/C is ON")
+
     elif weather == "Partly Cloudy":
-        print("\nIt is",tempHot,"degrees outside")
-        print("Your AC has been turned ON")
+        print("\nIt is",tempHot,"degrees outside.")
+
     elif weather == "Sleet":
-        print("\nIt is",tempCold,"degrees outside")
-        print("Your heat has been turned ON")
+        print("\nIt is",tempCold,"degrees outside. "
+                                 "Heat is ON")
+
+
     else:
         print("\nIt is",tempHot,"degrees outside")
+
 
 
 
